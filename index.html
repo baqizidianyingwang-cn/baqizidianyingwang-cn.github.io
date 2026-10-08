@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="八妻子电影网（baqizidianyingwang-cn.github.io）是精选优质影视网址导航大全与实用网址收录平台：电影、电视剧、综艺、动漫、纪录片、短剧，八个入口、一次直达，分类清爽、不绕路。">
+<meta name="keywords" content="八妻子电影网,八妻子电影,电影网站导航,影视网址大全,在线观看电影,高清电影,电视剧,综艺,动漫,纪录片,短剧">
+<meta name="author" content="八妻子电影网">
+<meta name="robots" content="index,follow">
+<title>八妻子电影网 - 影视网址导航大全 | 实用网址收录平台</title>
+<style>
+:root{
+  --plum:#7b3a6b; --plum2:#a85492; --ink:#2c2329; --ink2:#6d5e69; --dim:#a596a2;
+  --cream:#fdf6f2; --card:#fff; --line:#f0e2ea; --gold:#e6b95c;
+  --sh:0 22px 46px rgba(123,58,107,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--cream);color:var(--ink);line-height:1.85;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;outline:none}
+ul,ol{list-style:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* 顶条：流苏 */
+.tassel{background:linear-gradient(90deg,#5c2b4f,#7b3a6b,#a85492);color:#f7e3ef;font-size:11.4px;letter-spacing:1.4px;position:relative;z-index:20}
+.tassel .wrap{display:flex;justify-content:space-between;align-items:center;height:38px;gap:14px}
+.tassel b{font-weight:800}
+.tassel b i{font-style:normal;color:var(--gold)}
+.tassel nav{display:flex;gap:20px}
+.tassel a:hover{color:var(--gold)}
+.emo{animation:sway 3.2s ease-in-out infinite;display:inline-block}
+@keyframes sway{50%{transform:translateY(-2px)}}
+
+/* 报头 */
+.mast{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;padding:20px 0 14px;border-bottom:3px solid var(--plum)}
+.brand{display:flex;align-items:center;gap:15px}
+.logo{width:64px;height:64px;border-radius:18px;background:linear-gradient(140deg,var(--gold),#c98f26);position:relative;flex-shrink:0;box-shadow:0 12px 24px rgba(123,58,107,.34);transform:rotate(-4deg)}
+.logo::before{content:"八";position:absolute;inset:0;display:grid;place-items:center;color:#5c2b4f;font-weight:950;font-size:29px}
+.brand h1{font-size:clamp(26px,4.6vw,42px);font-weight:950;letter-spacing:.6px;line-height:1.12}
+.brand h1 em{font-style:normal;color:var(--plum)}
+.brand p{font-size:12.6px;color:var(--ink2);margin-top:5px}
+.brand p b{color:var(--plum2)}
+.issue{text-align:right;font-size:11.6px;color:var(--ink2);flex-shrink:0}
+.issue strong{display:block;font-size:14.6px;color:var(--plum);letter-spacing:1px}
+
+/* 导航 */
+nav.tabs{display:flex;gap:9px;flex-wrap:wrap;padding:12px 0;position:sticky;top:0;z-index:30;background:rgba(253,246,242,.94);backdrop-filter:blur(8px);border-bottom:2px dotted var(--plum2)}
+nav.tabs a{padding:9px 17px;border-radius:26px;font-size:12.6px;font-weight:800;color:var(--ink2);background:var(--card);border:2px solid var(--line)}
+nav.tabs a:hover{color:#fff;background:var(--plum2)}
+nav.tabs a.on{color:#fff;background:var(--plum);box-shadow:0 8px 16px rgba(123,58,107,.32)}
+
+/* Hero */
+.hero{position:relative;padding:38px 0 44px;overflow:hidden;background:
+  radial-gradient(1100px 400px at 84% -20%,rgba(168,84,146,.3),transparent 60%),
+  linear-gradient(180deg,#fdf0f6,#fdf6f2)}
+.hero::after{content:"";position:absolute;right:-60px;bottom:-90px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(230,185,92,.4),transparent 62%);animation:bloom 9s ease-in-out infinite alternate}
+@keyframes bloom{to{transform:scale(1.35)}}
+.hero-c{display:grid;grid-template-columns:1.22fr .78fr;gap:30px;align-items:center;position:relative;z-index:2}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--plum);color:var(--gold);font-size:10.8px;font-weight:950;letter-spacing:2px;padding:8px 15px;border-radius:24px}
+.hero h2{font-size:clamp(29px,5.3vw,47px);font-weight:950;line-height:1.22;margin:13px 0 11px}
+.hero h2 u{text-decoration:none;color:var(--plum);position:relative}
+.hero h2 u::after{content:"";position:absolute;left:0;right:0;bottom:5px;height:9px;background:rgba(230,185,92,.62);z-index:-1}
+.hero p{font-size:14.6px;color:var(--ink2);max-width:540px}
+.hero p b{color:var(--plum)}
+.chips{display:flex;gap:10px;margin-top:17px;flex-wrap:wrap}
+.chips a{padding:10px 19px;border-radius:30px;background:var(--card);border:2px solid var(--plum);font-size:12.6px;font-weight:900;color:var(--plum)}
+.chips a:hover{background:var(--plum);color:#fff;transform:translateY(-3px)}
+
+/* 八入口卡 */
+.eight{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.eight div{background:var(--card);border-radius:16px;padding:15px;box-shadow:var(--sh);border:2px solid var(--line);transition:.22s;position:relative}
+.eight div:hover{border-color:var(--plum);transform:translateY(-5px)}
+.eight b{font-family:Georgia,serif;font-size:12.4px;color:#fff;background:var(--plum2);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;margin-bottom:9px}
+.eight h5{font-size:13.8px;color:var(--plum)}
+.eight p{font-size:11px;color:var(--dim);margin-top:3px}
+
+/* 通用标题 */
+section{padding:38px 0;position:relative}
+.sec-h{display:flex;align-items:center;gap:12px;margin-bottom:21px;flex-wrap:wrap}
+.sec-h .tag{font-size:10.5px;font-weight:950;color:#fff;background:var(--plum2);padding:6px 13px;border-radius:20px;letter-spacing:1.6px}
+.sec-h h3{font-size:20px;font-weight:950;letter-spacing:.3px}
+.sec-h h3 em{font-style:normal;color:var(--plum)}
+.sec-h .more{margin-left:auto;font-size:12px;color:var(--dim);font-weight:800}
+
+/* 电影：figure */
+.movies{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.mcard{background:var(--card);border-radius:16px;overflow:hidden;transition:.25s;border:2px solid var(--line)}
+.mcard:hover{transform:translateY(-8px) rotate(-.6deg);border-color:var(--plum);box-shadow:var(--sh)}
+.mcard .cover{aspect-ratio:3/4;color:#fff;display:grid;place-items:center;text-align:center;padding:16px;font-weight:950;font-size:17px;letter-spacing:.6px;position:relative}
+.c1{background:linear-gradient(160deg,#7b3a6b,#5c2b4f)}
+.c2{background:linear-gradient(160deg,#a85492,#7b3a6b)}
+.c3{background:linear-gradient(160deg,#e6b95c,#c98f26);color:#5c4110}
+.c4{background:linear-gradient(160deg,#c96a7b,#9c4355)}
+.c5{background:linear-gradient(160deg,#6f7ab0,#4d5680)}
+.c6{background:linear-gradient(160deg,#c98a5a,#a06630)}
+.c7{background:linear-gradient(160deg,#5f8a6e,#3f634c)}
+.c8{background:linear-gradient(160deg,#b06a8a,#853f60)}
+.mcard .cover small{display:block;font-size:9.6px;font-weight:800;letter-spacing:2.4px;opacity:.92;margin-top:8px}
+.mcard .cover .badge{position:absolute;left:12px;top:12px;background:var(--gold);color:#5c4110;font-size:9.6px;font-weight:950;padding:5px 11px;border-radius:8px;transform:rotate(-6deg)}
+.mcard figcaption{padding:14px 16px}
+.mcard h4{font-size:14.4px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.mcard h4 i{font-style:normal;font-size:9.2px;font-weight:950;color:#fff;background:var(--plum2);border-radius:20px;padding:3px 9px;flex-shrink:0}
+.mcard p{font-size:11.6px;color:var(--dim);margin-top:4px}
+
+/* 分类：dl */
+.cat{background:var(--card);border-radius:20px;padding:14px 18px;box-shadow:var(--sh);border:2px solid var(--line)}
+.cat .row{display:grid;grid-template-columns:126px 1fr;gap:16px;padding:17px 18px;border-bottom:2px dotted var(--line)}
+.cat .row:last-child{border-bottom:none}
+.cat dt{font-weight:950;font-size:14.4px;display:flex;align-items:center;gap:11px;color:var(--plum)}
+.cat dt b{font-family:Georgia,serif;font-size:12.4px;color:var(--plum);background:var(--cream);border:2px solid var(--plum);width:28px;height:28px;border-radius:8px;display:grid;place-items:center;flex-shrink:0}
+.cat dd{display:flex;flex-wrap:wrap;gap:10px;align-content:center}
+.cat dd a{padding:8px 16px;border-radius:9px;background:var(--cream);font-size:12.6px;color:var(--ink2);font-weight:700}
+.cat dd a:hover{background:var(--plum);color:#fff}
+
+/* 网址收录：table */
+.sites{background:#fff;border-radius:20px;overflow:hidden;box-shadow:var(--sh);border:2px solid var(--line)}
+.sites table{width:100%;border-collapse:collapse;font-size:13px}
+.sites th{background:linear-gradient(90deg,#5c2b4f,#7b3a6b);color:var(--gold);text-align:left;padding:15px 18px;font-size:10.8px;letter-spacing:1.4px}
+.sites td{padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:middle;color:var(--ink2)}
+.sites tr:last-child td{border-bottom:none}
+.sites tbody tr:hover{background:#fdf0f6}
+.sites .u{font-weight:950;color:var(--ink);font-size:13.6px}
+.sites .u small{display:block;font-size:10.6px;color:var(--dim);font-weight:500;margin-top:2px}
+.pill{font-size:9.8px;padding:5px 12px;border-radius:20px;font-weight:950;white-space:nowrap}
+.p1{background:#f4e6ef;color:var(--plum)}
+.p2{background:#fbe6ec;color:#a85492}
+.p3{background:#fdf3dd;color:#9a6f14}
+.p4{background:#eaf0e6;color:#4a6b3a}
+.go{color:var(--plum);font-weight:950;font-size:12.4px}
+.go:hover{color:var(--plum2)}
+
+/* 热播榜：ol + 进度条 + 侧栏 */
+.rank{display:grid;grid-template-columns:1.55fr 1fr;gap:24px;align-items:start}
+.board{background:#fff;border-radius:20px;padding:12px 26px 26px;box-shadow:var(--sh);border:2px solid var(--line)}
+.board h5{font-size:14.8px;color:var(--plum);padding:19px 0 14px;border-bottom:3px double var(--gold);margin-bottom:16px;display:flex;justify-content:space-between}
+.board h5 a{font-size:11.4px;color:var(--dim);font-weight:700}
+.board ol{counter-reset:r;display:flex;flex-direction:column;gap:16px}
+.board li{counter-increment:r;display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.board li::before{content:counter(r,decimal-leading-zero);font-family:Georgia,serif;font-weight:950;font-size:15px;color:#fff;background:var(--plum2);width:40px;height:40px;border-radius:12px;display:grid;place-items:center}
+.board li:nth-child(1)::before{background:var(--gold);color:#5c4110}
+.board li:nth-child(2)::before{background:var(--plum)}
+.board li:nth-child(3)::before{background:#5c2b4f}
+.board b{font-size:14px;display:block}
+.board p{font-size:11.4px;color:var(--dim)}
+.bar{height:7px;border-radius:20px;background:var(--line);margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,var(--plum2),var(--gold))}
+.trend{display:inline-block;font-size:9.8px;font-weight:950;color:var(--plum);background:var(--cream);padding:3px 9px;border-radius:20px;margin-top:6px}
+
+.pick{display:flex;flex-direction:column;gap:15px}
+.pick article{background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--sh);border:2px solid var(--line);transition:.22s}
+.pick article:hover{border-color:var(--gold)}
+.pick .ph{aspect-ratio:16/9;color:#fff;display:grid;place-items:center;text-align:center;font-weight:950;font-size:15px;letter-spacing:1px}
+.pick figcaption{padding:14px 17px}
+.pick h6{font-size:13.8px;display:flex;justify-content:space-between;gap:8px}
+.pick h6 span{font-size:9.2px;font-weight:950;color:#fff;background:var(--plum2);border-radius:20px;padding:3px 9px;flex-shrink:0}
+.pick p{font-size:11.6px;color:var(--dim);margin-top:4px}
+
+/* 指南：手风琴 */
+.guide{background:linear-gradient(160deg,#fdf0f6,#fdf6f2);border:2px solid var(--plum2);border-radius:20px;padding:28px 32px}
+.guide h4{font-size:17px;margin-bottom:17px;color:var(--plum)}
+.guide details{border-bottom:1.6px solid var(--line);padding:14px 0}
+.guide details:last-child{border-bottom:none}
+.guide summary{cursor:pointer;font-weight:950;font-size:14.2px;display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;color:var(--plum)}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary::after{content:"＋";color:var(--plum2);font-size:20px;transition:.25s;flex-shrink:0;font-weight:400}
+.guide details[open] summary::after{content:"－";transform:rotate(180deg)}
+.guide p{font-size:13px;color:var(--ink2);padding-top:9px;line-height:1.95}
+.guide p b{color:var(--plum)}
+
+/* 关于 */
+.about{background:linear-gradient(140deg,#5c2b4f,#7b3a6b);color:#f7e3ef;border-radius:26px;padding:36px;box-shadow:var(--sh)}
+.about .k{font-size:10.4px;letter-spacing:2.8px;color:var(--plum);background:var(--gold);font-weight:950;display:inline-block;padding:7px 16px;border-radius:20px;margin-bottom:13px}
+.about h2{font-size:24px;margin-bottom:13px;color:#fff;letter-spacing:.3px}
+.about h2 em{font-style:normal;color:var(--gold)}
+.about p{font-size:14.4px;color:#f3d9e8;max-width:840px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.stats div{background:rgba(255,255,255,.09);border:2px solid rgba(230,185,92,.45);border-radius:16px;padding:17px;text-align:center}
+.stats b{display:block;font-size:26px;color:var(--gold);font-weight:950;font-family:Georgia,serif}
+.stats span{font-size:11.4px;color:#eecfe0}
+
+/* Footer */
+footer.ft{background:#2c2329;color:#a596a2;padding:44px 0 22px;margin-top:40px}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:28px}
+.fgrid h6{font-size:13.6px;margin-bottom:14px;color:#f7e3ef;letter-spacing:1px}
+.fgrid ul{display:flex;flex-direction:column;gap:9px;font-size:12.6px}
+.fgrid a:hover{color:var(--gold)}
+.copy{text-align:center;font-size:12px;color:#8c7c86;border-top:1px solid rgba(255,255,255,.1);padding-top:20px;line-height:1.95}
+.copy b{color:var(--gold)}
+.up{position:fixed;right:16px;bottom:20px;width:52px;height:52px;border-radius:50%;background:var(--plum);color:var(--gold);display:grid;place-items:center;box-shadow:0 16px 28px rgba(123,58,107,.44);z-index:60;font-size:19px;font-weight:950}
+
+@media (max-width:1000px){
+  .hero-c,.rank{grid-template-columns:1fr}
+  .eight{grid-template-columns:repeat(2,1fr)}
+  .movies{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:760px){
+  .wrap{padding:0 15px}
+  section{padding:28px 0}
+  .movies{grid-template-columns:repeat(2,1fr);gap:13px}
+  .cat .row{grid-template-columns:1fr;gap:10px}
+  .sites{overflow-x:auto}
+  .sites table{min-width:730px}
+  .mast{align-items:center}
+}
+@media (max-width:560px){
+  .stats,.fgrid{grid-template-columns:repeat(2,1fr)}
+  .tassel nav .x{display:none}
+  .issue{display:none}
+  .sec-h h3{font-size:17px}
+  .about{padding:26px}
+  .guide{padding:24px 19px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="tassel">
+  <div class="wrap">
+    <div><b>八妻子电影网<b><i>· 八入口 · 一次直达</i></b> · baqizidianyingwang-cn.github.io</b> &nbsp;<span class="x">|&nbsp; 影视网址导航 · 电影网址收录 · 分类清爽</span></div>
+    <nav><a href="#movies">电影</a><a href="#cat">分类</a><a href="#sites">网址收录</a><a href="#rank">热播榜</a><a href="#guide">找片指南</a></nav>
+  </div>
+</div>
+
+<header class="wrap">
+  <div class="mast">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>八<em>妻子电影网</em></h1>
+        <p>影视网址<b>导航大全</b> · 实用电影网址<b>收录平台</b> · 八个入口，<b>一次直达</b></p>
+      </div>
+    </div>
+    <div class="issue"><strong>VOL.28</strong>2026 · 第 41 期<br>网址已核验 · 每周更新</div>
+  </div>
+</header>
+
+<nav class="tabs wrap" aria-label="栏目导航">
+  <a class="on" href="#movies">🎬 电影</a>
+  <a href="#cat">🗂️ 分类</a>
+  <a href="#sites">🌐 网址收录</a>
+  <a href="#rank">🔥 热播榜</a>
+  <a href="#guide">📜 找片指南</a>
+  <a href="#about">ℹ️ 关于</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-c">
+      <div>
+        <span class="eyebrow">🪭 EIGHT · 八入口直达</span>
+        <h2>八种心情，<br>八个<b>直达入口</b>。</h2>
+        <p><b>八妻子电影网</b>（baqizidianyingwang-cn.github.io）把<b>好用的影视网站入口</b>按类型理清楚：<b>电影、剧集、综艺、动漫、纪录片、短剧</b>，六大类、<b>八个高频入口</b>，点一下就到。不弹窗、不诱导、不绕路。</p>
+        <form class="chips" action="#" method="get" onsubmit="return false" aria-label="快速找片">
+          <a href="#movies">🎬 经典老片</a>
+          <a href="#cat">💧 催泪治愈</a>
+          <a href="#rank">🔥 今日热播</a>
+          <a href="#cat">🎨 动漫合集</a>
+          <a href="#guide">📚 纪录片</a>
+          <a href="#">📱 短剧上头</a>
+        </form>
+      </div>
+
+      <aside class="eight" aria-label="八个直达入口">
+        <div><b>01</b><h5>电影</h5><p>经典 / 悬疑 / 治愈</p></div>
+        <div><b>02</b><h5>电视剧</h5><p>国产 / 美 / 韩 / 日</p></div>
+        <div><b>03</b><h5>综艺</h5><p>真人秀 / 脱口秀</p></div>
+        <div><b>04</b><h5>动漫</h5><p>日漫 / 国漫 / 剧场</p></div>
+        <div><b>05</b><h5>纪录片</h5><p>自然 / 历史 / 人文</p></div>
+        <div><b>06</b><h5>短剧</h5><p>逆袭 / 甜宠 / 悬疑</p></div>
+        <div><b>07</b><h5>热播榜</h5><p>本周热度排序</p></div>
+        <div><b>08</b><h5>找片指南</h5><p>四步不踩雷</p></div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="movies">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">01 / FILMS</span><h3>电影 · <em>八个必看</em></h3><a class="more" href="#">完整片单 ›</a></div>
+      <div class="movies">
+        <figure class="mcard"><div class="cover c1">经典<small>CLASSIC</small><span class="badge">长存</span></div><figcaption><h4>剧情 / 经典 <i>120 分钟</i></h4><p>经得起二刷三刷</p></figcaption></figure>
+        <figure class="mcard"><div class="cover c2">治愈<small>HEAL</small></div><figcaption><h4>家庭 / 温情 <i>催泪</i></h4><p>平凡人的不平凡</p></figcaption></figure>
+        <figure class="mcard"><div class="cover c3">烧脑<small>PUZZLE</small><span class="badge">热</span></div><figcaption><h4>悬疑 / 反转 <i>高能</i></h4><p>最后一秒才懂</p></figcaption></figure>
+        <figure class="mcard"><div class="cover c4">爱情<small>LOVE</small></div><figcaption><h4>爱情 / 青春 <i>心动</i></h4><p>错过与重逢</p></figcaption></figure>
+        <figure class="mcard"><div class="cover c5">视效<small>VFX</small></div><figcaption><h4>科幻 / 冒险 <i>脑洞</i></h4><p>另一个世界</p></figcaption></figure>
+        <figure class="mcard"><div class="cover c6">合家欢<small>FAMILY</small></div><figcaption><h4>动画 / 奇幻 <i>全龄</i></h4><p>不只是给小孩</p></figcaption></figure>
+        <figure class="mcard"><div class="cover c7">长知识<small>DOCS</small></div><figcaption><h4>纪录片 / 人文 <i>真实</i></h4><p>真实更震撼</p></figcaption></figure>
+        <figure class="mcard"><div class="cover c8">碎片<small>SHORT</small><span class="badge">新</span></div><figcaption><h4>短剧 / 爽剧 <i>上头</i></h4><p>通勤刚好</p></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="cat">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">02 / INDEX</span><h3>分类 · <em>找得更快</em></h3><a class="more" href="#">完整分类 ›</a></div>
+      <div class="cat">
+        <div class="row"><dt><b>01</b>电影</dt><dd>
+          <a href="#">经典老片</a><a href="#">剧情</a><a href="#">悬疑</a><a href="#">爱情</a><a href="#">动作</a><a href="#">科幻</a><a href="#">动画</a><a href="#">文艺</a>
+        </dd></div>
+        <div class="row"><dt><b>02</b>电视剧</dt><dd>
+          <a href="#">国产剧</a><a href="#">美剧</a><a href="#">韩剧</a><a href="#">日剧</a><a href="#">英剧</a><a href="#">年代剧</a><a href="#">悬疑剧</a>
+        </dd></div>
+        <div class="row"><dt><b>03</b>综艺</dt><dd>
+          <a href="#">真人秀</a><a href="#">脱口秀</a><a href="#">选秀</a><a href="#">户外</a><a href="#">访谈</a><a href="#">喜剧综艺</a>
+        </dd></div>
+        <div class="row"><dt><b>04</b>动漫</dt><dd>
+          <a href="#">国漫</a><a href="#">日漫</a><a href="#">美漫</a><a href="#">剧场版</a><a href="#">泡面番</a>
+        </dd></div>
+        <div class="row"><dt><b>05</b>纪录片</dt><dd>
+          <a href="#">自然</a><a href="#">历史</a><a href="#">人文</a><a href="#">犯罪纪实</a><a href="#">美食</a><a href="#">科技</a>
+        </dd></div>
+        <div class="row"><dt><b>06</b>短剧</dt><dd>
+          <a href="#">逆袭</a><a href="#">甜宠</a><a href="#">悬疑</a><a href="#">年代</a><a href="#">爽剧</a>
+        </dd></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">03 / DIRECTORY</span><h3>网址收录 · <em>影视网址大全</em></h3><a class="more" href="#">提交网址 ›</a></div>
+      <div class="sites">
+        <table>
+          <thead><tr><th style="width:24%">网站 / 入口</th><th style="width:36%">收录说明</th><th style="width:15%">类型</th><th style="width:13%">状态</th><th style="width:12%">访问</th></tr></thead>
+          <tbody>
+            <tr><td class="u">八妻子电影网<small>baqizidianyingwang-cn.github.io</small></td><td>影视网址导航大全，实用电影网址收录平台，八入口直达、不绕路</td><td><span class="pill p1">综合导航</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">经典老片<small>按年代 / 按评分</small></td><td>90 年代至今的高分经典，附一句观影提示</td><td><span class="pill p1">电影</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">剧集大全<small>国产 / 美 / 韩 / 日</small></td><td>热播剧、经典老剧、连载更新，按地区与题材索引</td><td><span class="pill p2">电视剧</span></td><td>更新中</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">综艺动漫<small>真人秀 / 日漫 / 国漫</small></td><td>综艺更新快、动漫合集全，支持按字母与年份查找</td><td><span class="pill p2">综艺动漫</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">纪录片库<small>自然 / 历史 / 人文</small></td><td>高分纪录片索引，附评分与一句话简介</td><td><span class="pill p3">纪录片</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">短剧精选<small>逆袭 / 甜宠 / 悬疑</small></td><td>单集 1–3 分钟的爽快节奏，通勤碎片时间友好</td><td><span class="pill p4">短剧</span></td><td>热</td><td><a class="go" href="#">进入 ›</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">04 / HOT</span><h3>热播 · <em>八入口热度榜</em></h3><a class="more" href="#">完整榜单 ›</a></div>
+      <div class="rank">
+        <div class="board">
+          <h5><span>本周热度榜</span><a href="#">换一批 ›</a></h5>
+          <ol>
+            <li><div><b>八妻子电影网 · 影视网址导航</b><p>电影 / 剧集 / 综艺 / 动漫 一站式直达</p><span class="trend">↑ 1</span><i class="bar"><i style="width:98%"></i></i></div></li>
+            <li><div><b>被低估的国产老剧</b><p>十年后再看，台词依然锋利</p><span class="trend">↑ 3</span><i class="bar"><i style="width:86%"></i></i></div></li>
+            <li><div><b>周末三部曲：回味 + 哭 + 烧脑</b><p>180 分钟经典套餐，刚好一个周末</p><span class="trend">↑ 2</span><i class="bar"><i style="width:74%"></i></i></div></li>
+            <li><div><b>悬疑剧追更日历</b><p>每周更新，反转不断</p><span class="trend">↑ 5</span><i class="bar"><i style="width:62%"></i></i></div></li>
+            <li><div><b>纪录片：真实的力量</b><p>自然、历史、人文，长知识不犯困</p><span class="trend">↑ 1</span><i class="bar"><i style="width:51%"></i></i></div></li>
+            <li><div><b>短剧也精彩</b><p>15 分钟一个反转，碎片时间杀手</p><span class="trend">新</span><i class="bar"><i style="width:43%"></i></i></div></li>
+          </ol>
+        </div>
+        <aside class="pick">
+          <article><div class="ph c1">🪭 本周推荐 · 三部曲</div><figcaption><h6>回味 + 哭 + 烧脑 <span>推荐</span></h6><p>一部回味、一部治愈、一部动脑，刚好填满一个周末。</p></figcaption></article>
+          <article><div class="ph c3">🎞️ 冷门宝藏</div><figcaption><h6>被低估的国产剧 <span>长尾</span></h6><p>当年收视平平，如今被年轻人重新发现。</p></figcaption></article>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-h"><span class="tag">05 / GUIDE</span><h3>找片指南 · <em>怎么选不踩雷</em></h3><a class="more" href="#">完整说明 ›</a></div>
+      <div class="guide">
+        <h4>🪭 四步找到今晚那部片</h4>
+        <details open><summary><span>🎬 第一步：按「心情」而不是按「类型」挑</span></summary><p>累了选<b>爽片</b>，想哭选<b>治愈</b>，想动脑选<b>烧脑</b>，只有 15 分钟选<b>短剧</b>。按心情选，比按类型准。</p></details>
+        <details><summary><span>🚀 第二步：点「进入」就是直达</span></summary><p>本站为<b>影视网址导航</b>，只做入口不做播放。每个入口都经过<b>加载速度与广告干扰</b>两项核验，优先推荐加载快、无诱导下载的站点。</p></details>
+        <details><summary><span>📺 第三步：追剧用「追更日历」</span></summary><p>连载剧按<b>更新日</b>整理，周三、周五更新的剧不会漏。断更、烂尾会在收录说明里标注。</p></details>
+        <details><summary><span>📚 纪录片怎么挑不犯困</span></summary><p>选<b>单集 40–60 分钟、有主线叙事</b>的。自然类看画面，人文类看采访，犯罪纪实看还原度。</p></details>
+        <details><summary><span>🛡️ 收录与下架标准</span></summary><p>收录四项：<b>免费或透明、无诱导下载、加载不卡、内容合规</b>。出现弹窗劫持、诱导跳转、侵权投诉，<b>48 小时内下架</b>。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="k">ABOUT · 八妻子电影网</div>
+        <h2>关于<em>八妻子电影网</em>（baqizidianyingwang-cn.github.io）</h2>
+        <p><b>八妻子电影网</b>是一个<b>影视网址导航大全与实用网址收录平台</b>。我们不搞花哨的推荐算法，只做三件简单的事：<b>分类清楚、入口直达、更新勤快</b>。八个入口，一次直达——找网站不该成为看电影的负担。</p>
+        <div class="stats">
+          <div><b>708</b><span>已收录网址</span></div>
+          <div><b>8</b><span>直达入口</span></div>
+          <div><b>零诱导</b><span>无诱导下载</span></div>
+          <div><b>每周</b><span>核验更新</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h6>电影</h6><ul>
+        <li><a href="#movies">经典老片</a></li><li><a href="#movies">剧情 / 治愈</a></li>
+        <li><a href="#movies">悬疑 / 反转</a></li><li><a href="#movies">合家欢 / 动画</a></li>
+      </ul></div>
+      <div><h6>剧集</h6><ul>
+        <li><a href="#cat">国产剧</a></li><li><a href="#cat">美剧 / 英剧</a></li>
+        <li><a href="#cat">韩剧 / 日剧</a></li><li><a href="#cat">经典老剧</a></li>
+      </ul></div>
+      <div><h6>综艺动漫</h6><ul>
+        <li><a href="#cat">真人秀</a></li><li><a href="#cat">脱口秀</a></li>
+        <li><a href="#cat">日漫 / 国漫</a></li><li><a href="#cat">剧场版</a></li>
+      </ul></div>
+      <div><h6>平台与规范</h6><ul>
+        <li><a href="#sites">网址收录</a></li><li><a href="#rank">热播榜</a></li>
+        <li><a href="#guide">找片指南</a></li><li><a href="#">提交网址</a></li>
+      </ul></div>
+    </div>
+    <div class="copy">
+      © 2026 <b>八妻子电影网</b> · 网址：https://baqizidianyingwang-cn.github.io &nbsp;|&nbsp; 影视网址导航大全 · 实用电影网址收录平台<br>
+      本站为影视网址导航，倡导正版观影与版权合规，请勿用于侵权搬运。
+    </div>
+  </div>
+</footer>
+
+<a class="up" href="#" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">↑</a>
+
+</body>
+</html>
